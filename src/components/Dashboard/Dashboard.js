@@ -22,12 +22,6 @@ class Dashboard extends Component {
       })
     })
   }
-  componentDidMount() {
-    // axios.get('/api/auth/session').then(res => {
-    //   console.log(res.data)
-    //   // this.props.loginUser(res.data)
-    // })
-  }
 
   render() {
     if (!this.props.user.id) {
@@ -40,10 +34,8 @@ class Dashboard extends Component {
       <div className="dashboard-container">
         <div className="dashboard-top-box">
             <Link className="add-edit-link" to='/dashboard/add-event'><button>Add Event</button></Link>
-            {/* <br/> */}
             <h1>Upcoming Events</h1>
             
-            {/* <div className="dashboard-top-box-filler"></div> */}
         
         </div>
 

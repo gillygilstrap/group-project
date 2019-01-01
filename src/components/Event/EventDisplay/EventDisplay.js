@@ -244,9 +244,6 @@ class EventDisplay extends Component {
     }
 }
 
-// Event props
-//(owner_id, title, description, address, location, start_time, end_time, socket_room)
-
 const mapStateToProps = (state) => {
     return {
         user: state.user

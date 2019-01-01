@@ -5,7 +5,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: space-evenly;  */
     font-size: calc(10px + 2vmin);
     color: white;
     position: relative;
@@ -23,20 +22,9 @@
     font-family: 'Courier New', Courier, monospace; 
     font-weight: bold; 
     justify-content: space-evenly; 
-    /* margin-left: 10px;  */
-    // width: 25%; 
   }
 
-  // .right_nav {
-  //   display: flex;
-  //   flex-direction: row;
-  //   width: 50%; 
-  //   margin-left: 50%; 
-  // }
 
-  .left_nav > a {
-    // padding-left: 25px; 
-  }
 
   .right_nav > nav_items > img {
     margin-left: 5%;
@@ -93,7 +81,6 @@
     font-size: 16px; 
     font-family: 'Courier New', Courier, monospace; 
     font-weight: bold; 
-    // margin-left: 40%; 
   }
 
   .lisu_button:hover {
@@ -163,9 +150,6 @@
       margin-top: 15px; 
 
     }
-    // .left_nav {
-    //   width: 50%; 
-    // }
     .left_nav > p {
       font-size: 16px; 
     }

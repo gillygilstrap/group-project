@@ -7,7 +7,6 @@ import Geocode from "react-geocode";
 import moment from 'moment';
 import './datetime.css';
 import './addevent.scss'
-import software01 from '..//..//..//images/software01.jpg'; 
 
 class AddEvent extends Component {
     constructor(params){
@@ -78,7 +77,6 @@ class AddEvent extends Component {
 
             axios.post('/api/events', payload)
             .then(res => {
-                console.log('Success', res)
                 this.props.history.push(`/event/${res.data.id}`);
             });
             },

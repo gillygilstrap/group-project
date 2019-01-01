@@ -102,7 +102,6 @@ class LoginRegister extends Component {
                         
                         <div className="register-btns-box">
                             <button onClick={this.handleRegisterClick} className="register-btn">Submit</button>
-                            {/* <Link to="/"><button onClick={this.handleRegisterClick} className="register-btn">Submit</button></Link> */}
                             <button className="back-to-login" onClick={this.toggleDisplayClick}>Back To Login</button>
                         </div>
                     </div>

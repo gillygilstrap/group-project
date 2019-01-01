@@ -151,13 +151,11 @@ class LandingParent extends Component {
 
         for (var a = [], i = startForAX ; i < endForAX ; ++ i) a[i] = i;
         a = this.shuffle(a);
-        console.log('--- random numbers ---', a)
 
         //Can't do percentages so we'll get center this way
         const centerX = width / 2
         const centerY = (height / 2) - 100 //100 is navbar height
 
-        // console.log('center', centerX, centerY)
         this.tweenOne = TweenLite.fromTo(this.animationBoxOne, timeGroupOne, {
             x: centerX, y: centerY, width: widthStartFour, height: widthStartFour, backgroundColor: 'rgba(36, 88, 173, .5)', borderRadius: radiusStartFour
         }, {
@@ -314,9 +312,9 @@ class LandingParent extends Component {
         })
     }
 
-    handleEventOnClick = (id) => {
-        // console.log('event id', id)
-    }
+    // handleEventOnClick = (id) => {
+    //     console.log('event id', id)
+    // }
 
     //Scroll listeners
 
@@ -332,13 +330,12 @@ class LandingParent extends Component {
     }
 
     handleResize = () => {
-        console.log('resized yo!')
         this.initTweenAnimations()
     }
 
-    handleScroll = () => {
-        // console.log('window y', window.scrollY, window.innerHeight)
-    }
+    // handleScroll = () => {
+    //     console.log('window y', window.scrollY, window.innerHeight)
+    // }
 
     //End lifecycle
     componentWillUnmount() {
@@ -352,7 +349,6 @@ class LandingParent extends Component {
     //For now we'll just fetch upcoming events, but eventually will filter by location
     fetchClosestEvents = () => {
         axios.post('api/events/upcoming').then(response => {
-            console.log('response data', response.data)
             this.setState({ upcomingEvents: response.data })
         }).catch(error => {
             console.log('error fetching events in landing parent', error)

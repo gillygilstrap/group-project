@@ -37,7 +37,6 @@ class Banner extends Component {
 
     componentDidMount() {
         axios.get('/api/auth/session').then(res => {
-              console.log(res.data)
               this.props.loginUser(res.data)
         })
     }
